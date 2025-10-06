@@ -15,21 +15,21 @@ export default function App() {
           marginTop: 20,
         }}
       >
-        <Link id="form-link" to="/">
+        <Link id="form-link" to="/form">
           Layout
         </Link>
-        <Link id="form-ref-link" to="/ref">
+        <Link id="form-ref-link" to="/form-ref">
           useRef
         </Link>
-        <Link id="form-state-link" to="/state">
+        <Link id="form-state-link" to="/form-state">
           useState
         </Link>
       </nav>
 
       <Switch>
-        <Route exact path="/" component={Form} />
-        <Route path="/ref" component={FormRef} />
-        <Route path="/state" component={FormState} />
+        <Route exact path="/form" component={Form} />
+        <Route path="/form-ref" component={FormRef} />
+        <Route path="/form-state" component={FormState} />
       </Switch>
     </Router>
   );
